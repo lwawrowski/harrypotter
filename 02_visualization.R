@@ -86,6 +86,7 @@ hp_houses %>%
     labs(caption = "Łukasz Wawrowski - wawrowski.edu.pl") +
     theme_bw() +
     ggtitle("House name mentioned per page in Harry Potter books") +
+    theme(plot.caption = element_text(color = "grey80")) +
     ggsave(filename = "figs/houses_page_percent.png", width = 8, height = 6, dpi = 600)
 
   
